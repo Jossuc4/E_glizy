@@ -1,0 +1,141 @@
+:root{
+    --body-col:#868686;
+    --divs-col:#ffffff;
+    --text-col:#000000;
+    --font1:sans-serif;
+}
+body{
+    background-color: var(--body-col);
+    color: var(--text-col);
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;padding: 0;
+    width: 100vw;
+    height: 100vh;    
+}
+.eg{
+    border-radius: 20px;
+    display: inline-block;
+    background-color: var(--divs-col);
+    position: relative;
+    height: 95%;
+}
+.create_eg{
+    position: relative;
+    width: 35%;
+}
+.create_eg form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.eg h1,
+.eg h2{
+    font-family: var(--font1);
+    text-align: center;
+    text-decoration: underline;
+}
+.eg h1{
+    margin-top: 30px;
+}
+.input-box{
+    width: 90%;
+    height: 40px;
+    margin: 20px 0px;
+    position: relative;
+    border-bottom: 1px solid var(--text-col);
+    cursor: text;
+
+}
+.input-box input{
+    outline: none;
+    border: none;
+    color: var(--text-col);
+    font-family: var(--font1);
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+.input-box label{
+    cursor: text;
+    transition: all .3s;
+    color: #6b6b6b;
+    font-family: var(--font1);
+    position: absolute;
+    top: 40%;
+    font-size: 1em;
+    font-family: var(--font1);
+    user-select: none;
+}
+.input-box input:valid ~ label,
+.input-box input:focus ~ label{
+    top: -1%;
+    font-size: .8em;
+    color: var(--text-col);
+}
+.create_eg_btn{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--font1);
+    background-color: var(--text-col);
+    color: var(--divs-col);
+    width: 90%;
+    height: 30px;
+}
+#message{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+
+
+
+
+.list_eg{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list_container{
+    border: 1px solid;
+    width: 90%;
+    height: 70%;
+    overflow-y: auto;
+}
+.list_container ul{
+    list-style: none;
+}
+.list_container ul li{
+    cursor: pointer;
+    padding:10px 0;
+    margin: 10px 10px;
+}
+.list_container ul li.active{
+    border-bottom: 1px solid;
+}
+.buttons{
+    width: 90%;
+    height: 30px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button{
+    width: 24%;
+    height: 100%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--font1);
+    background-color: var(--text-col);
+    color: var(--divs-col);
+}

@@ -1,0 +1,153 @@
+:root{
+    --body-col:#868686;
+    --divs-col:#ffffff;
+    --text-col:#000000;
+    --font1:sans-serif;
+}
+body{
+    background-color: var(--body-col);
+    color: var(--text-col);
+    font-family: var(--font1);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.section,
+.eglise{
+    background-color: var(--divs-col);
+    border-radius: 20px;
+    padding-bottom: 30px;
+}
+.eglise{
+    height: 90vh;
+}
+/* #confirmer{
+    position: absolute;
+    display: flex;
+    height: 30px;
+    width: 155px;
+    padding-left: 45px;
+    background-color: var(--text-col);
+    color: white;
+    margin-left: 17em;
+    margin-top: 18em;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    z-index: -111;
+} */
+
+
+
+
+
+
+
+.eglise{
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.img{
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--divs-col);
+    border-radius: 100%;
+}
+.img img{
+    border-radius: 100%;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.img img{
+    object-fit: content;
+}
+.buttons,
+.nom{
+    margin-top: 20px;
+    width: 80%;
+}
+.buttons button{
+    user-select: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px 0px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: var(--text-col);
+    color: var(--divs-col);
+    font-family: var(--font1);
+    width: 100%;
+}
+.buttons button a:active,
+.buttons button a:hover,
+.buttons button a{
+    text-decoration: none;
+    color: var(--divs-col);
+}
+.nom{
+    height: 30px;
+    display: flex;
+}
+.nom input{
+    height: 100%;
+    width: 60%;
+    border: none;
+    outline: none;
+}
+.nom button{
+    height: 100%;
+    width: 40%; 
+    background-color: var(--text-col);
+    color: var(--divs-col); 
+    font-family: var(--font1);
+    outline: none;
+    border: none;
+    user-select: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.section{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+.date{
+    width: 90%;
+}
+.mv_entree,
+.mv_sortie{
+    width: 90%;
+    text-align: center;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid;
+    padding: 10px;
+}
+.total_en,
+.total_so{
+    padding: 10px 0px;
+    text-align: left;
+    font-weight: bold;
+}

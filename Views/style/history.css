@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.download{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: rgb(0, 191, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 2em;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    position: fixed;
+    cursor: pointer;
+    user-select: none;
+}
+.chart{
+    width: 80%;
+    height: 80%;
+    position: relative;
+}
+.chart canvas{
+    width: 100%;
+    border: 1px solid;
+    margin: 10px;
+}
+.buttons button{
+    user-select: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px 0px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: var(--text-col);
+    color: var(--divs-col);
+    font-family: var(--font1);
+    width: 100%;
+}
