@@ -5,5 +5,5 @@
     header("Cache-Control: no-cache, must-revalidate"); 
     header("Expires: Sat, 26 Jul 1997 05:00:00 GMT");  
 
-    define("CONNECT",new PDO("mysql:dbname=eglise;port=3308","root",""));
+    define("CONNECT",new PDO("mysql:dbname=e_glizy","larry","admin"));
 ?>
