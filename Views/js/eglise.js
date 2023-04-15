@@ -5,9 +5,9 @@ function loadList(){
 
     const req=new XMLHttpRequest();
 
-    //This url depends on what server to execute the data/Eglise.php file
+    //This url depends on what server to execute the data/E_glizy.php file
 
-    var url="http://localhost/Eglise/index.php?route=listeEglise";
+    var url="http://localhost/E_glizy/index.php?route=listeEglise";
     req.open("GET", url,true);
     req.send(null);
 
@@ -20,7 +20,7 @@ function loadList(){
             let li =document.createElement("li");
             let anchor=document.createElement("a");
             anchor.innerHTML = element.design
-            anchor.setAttribute("href","http://localhost/Eglise/index.php?route=details&id="+element.idEglise);
+            anchor.setAttribute("href","http://localhost/E_glizy/index.php?route=details&id="+element.idEglise);
             anchor.setAttribute("style","text-decoration:none;color:black")
             li.appendChild(anchor);
             document.getElementById("eglise_list").appendChild(li);

@@ -1,7 +1,7 @@
 var id=document.querySelector(".id").value
 console.log(id)
 
-fetch('http://localhost/Eglise/index.php?route=stat&id='+id)           //api for the get request
+fetch('http://localhost/E_glizy/index.php?route=stat&id='+id)           //api for the get request
   .then(response => response.json())
   .then(data =>{
     console.log(data.entree)

@@ -1,6 +1,6 @@
 <?php
 
-    $connection=new PDO("mysql:dbname=eglise;port=3308","root","");
+    $connection=new PDO("mysql:dbname=e_glizy","larry","admin");
 
     if(!empty($_POST['add'])){
         $design=$_POST['add'];

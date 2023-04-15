@@ -3,7 +3,7 @@ function getData(idEglise) {
 
     var xhr = new XMLHttpRequest();
     
-    xhr.open('GET', 'http://localhost/Eglise/index.php?route=stat&id='+idEglise, true);
+    xhr.open('GET', 'http://localhost/E_glizy/index.php?route=stat&id='+idEglise, true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     
     xhr.onreadystatechange = function() {

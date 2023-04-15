@@ -26,6 +26,11 @@
 
                 $res=$query->execute([$motif,$montant,$idEglise]);
 
+                 //Insertion dans la base de transactions
+                /* $id=CONNECT->query("SELECT idSortie FROM entree WHERE dateEntree=(SELECT MAX(dateEntree) from entree)")->fetch(PDO::FETCH_ASSOC)['idEntree'];*/
+                $id=CONNECT->query("SELECT MAX(idSortie) idSortie FROM sortie")->fetch(PDO::FETCH_ASSOC)['idSortie']++;
+                $q=CONNECT->query("INSERT INTO transactions(idEglise,id,typeT,dateT,montant) VALUES('$idEglise',$id,'OUT',CURDATE(),$montant)");
+
                 //Mise à jour du solde
                 $update=CONNECT->prepare("UPDATE eglise SET solde=solde-? WHERE idEglise=?");
                 $exec=$update->execute([$montant,$idEglise]);

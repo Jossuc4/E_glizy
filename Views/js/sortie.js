@@ -95,7 +95,7 @@ function transactions(){
 
     //This url depends on what server to execute the data/Entrees.php file
 
-    var url="http://localhost/Eglise/index.php?route=listeSortie&design="+design.textContent;
+    var url="http://localhost/E_glizy/index.php?route=listeSortie&design="+design.textContent;
     req.open("GET", url,true);
     req.send(null);
 

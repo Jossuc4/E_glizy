@@ -14,6 +14,11 @@
             $query=CONNECT->prepare("INSERT INTO entree(motif,montantEntree,idEglise,dateEntree)
             VALUES(?,?,?,CURDATE())");
 
+            //Insertion dans la base de transactions
+            $id=CONNECT->query("SELECT MAX(idEntree) idEntree FROM entree")->fetch(PDO::FETCH_ASSOC)['idEntree'];
+            $q=CONNECT->prepare("INSERT INTO transactions(idEglise,id,typeT,dateT,montant) VALUES(?,?,?,CURDATE(),?)");
+            $exec=$q->execute([$idEglise,$id,'IN',$montant]);
+
             $res=$query->execute([$motif,$montant,$idEglise]);
 
             //Mise à jour du solde
